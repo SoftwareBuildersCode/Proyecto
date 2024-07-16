@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="tienda.html">
+                <img src="img/logos/logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+            <button>Buscar</button>
+        </div>
+        <div class="header-right">
+            <img src="img/logos/carrito.png" alt="Carrito" title="Carrito">
+            <img src="img/logos/user.png" alt="Perfil" title="Perfil">
+            <img src="img/logos/noti.png" alt="Notificaciones" title="Notificaciones">
+        </div>
+    </header>
+    <aside class="fixed-menu">
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="product-page">
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image">
+                    <img id="main-img" src="img/productos/producto1.jpg" alt="Producto principal">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 id="product-name">Nombre del Producto</h1>
+                <p id="product-price">$0.00</p>
+                <p id="product-description">Descripción completa del producto.</p>
+                <div class="product-info">
+                    <p><strong>Color:</strong> <span id="product-color">Color del Producto</span></p>
+                    <p><strong>Stock disponible:</strong> <span id="product-stock">Cantidad</span></p>
+                    <p><strong>Cantidad:</strong> <input type="number" id="product-quantity" value="1" min="1"></p>
+                </div>
+                <button class="buy-button">Comprar ahora</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Mi Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/product.js"></script>
+</body>
+</html>
