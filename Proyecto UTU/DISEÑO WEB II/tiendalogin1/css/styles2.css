@@ -1,0 +1,182 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Eliminar márgenes */
+    padding-top: 50px; /* Ajustar el padding-top para la nueva altura del header */
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b8b8b8;
+    padding: 10px;
+    border: 2px solid #00704A;
+    height: 70px; /* Altura del header ajustada */
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.header-left .logo {
+    height: 90px; /* Ajustado para agrandar el logo */
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #00704A;
+    border-right: none;
+}
+
+.search-bar button {
+    padding: 5px;
+    font-size: 14px;
+    border: 2px solid #00704A;
+    background-color: #00704A;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #005030;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.fixed-menu {
+    position: fixed;
+    top: 70px; /* Ajustado para comenzar debajo del header */
+    left: 0;
+    width: 200px;
+    height: calc(100% - 70px); /* Altura ajustada para considerar el espacio ocupado por el header */
+    background-color: #b8b8b8;
+    padding-top: 20px; /* Espacio adicional para separar el contenido del borde superior */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-right: 2px solid #00704A; /* Ajuste de borde */
+}
+
+.fixed-menu nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fixed-menu nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.fixed-menu nav ul li a:hover {
+    background-color: #ffffff;
+}
+
+.content {
+    margin-left: 200px; /* Espacio para el menú fijo */
+    padding: 20px;
+}
+
+/* Estilos de la página del producto */
+.product-page {
+    display: flex;
+    justify-content: center; /* Centrar el contenido de la página del producto */
+    align-items: center;
+    margin: 20px;
+    flex: 1;
+    min-height: calc(100vh - 140px); /* Altura mínima para asegurar que el contenido esté centrado verticalmente */
+}
+
+.product-container {
+    border: 2px solid #00704A; /* Bordes verdes */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Centrar el contenido del contenedor */
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+}
+
+.product-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.main-image img {
+    width: 500px; /* Tamaño aumentado de la imagen */
+    height: auto;
+}
+
+.product-details {
+    max-width: 600px; /* Aumentar el ancho del contenedor de detalles del producto */
+}
+
+.product-details h1 {
+    font-size: 32px; /* Tamaño aumentado del título */
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 18px; /* Tamaño aumentado del texto */
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 18px; /* Tamaño aumentado del texto */
+    margin-bottom: 5px;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px; /* Tamaño aumentado del botón */
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Tamaño aumentado del texto del botón */
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos del footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f8f800;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
