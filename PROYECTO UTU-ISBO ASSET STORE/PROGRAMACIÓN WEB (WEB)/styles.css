@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b8b8b8;
+    padding: 10px;
+    border: 2px solid #00704A;
+    height: 70px; /* Altura del header ajustada */
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.header-left .logo {
+    height: 90px; /* Ajustado para agrandar el logo */
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #00704A;
+    border-right: none;
+}
+
+.search-bar button {
+    padding: 5px;
+    font-size: 14px;
+    border: 2px solid #00704A;
+    background-color: #00704A;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #005030;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.fixed-menu {
+    position: fixed;
+    top: 70px; /* Ajustado para comenzar debajo del header */
+    left: 0;
+    width: 200px;
+    height: calc(100% - 70px); /* Altura ajustada para considerar el espacio ocupado por el header */
+    background-color: #b8b8b8;
+    padding-top: 20px; /* Espacio adicional para separar el contenido del borde superior */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-right: 2px solid #00704A; /* Ajuste de borde */
+}
+
+.fixed-menu nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fixed-menu nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.fixed-menu nav ul li a:hover {
+    background-color: #ffffff;
+}
+
+.content {
+    margin-left: 200px; /* Espacio para el menú fijo */
+    padding: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: calc(20% - 40px);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.offer-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-logo {
+    height: 80px; /* Tamaño ajustado para agrandar el logo */
+}
+
+footer .footer-content {
+    display: flex;
+    align-items: center;
+}
+
+footer .search-bar {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+footer .search-bar input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #00704A;
+    border-right: none;
+}
+
+footer .search-bar button {
+    padding: 5px;
+    font-size: 14px;
+    border: 2px solid #00704A;
+    background-color: #00704A;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+footer .search-bar button:hover {
+    background-color: #005030;
+}
