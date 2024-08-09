@@ -137,7 +137,7 @@ if ($productos != null) {
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-        <button id="btn-elimina" type="button" class="btn btn-danger" onclick="elimina()">Si</button>
+        <button id="btn-elimina" type="button" class="btn btn-online-danger" onclick="elimina()">Si</button>
       </div>
     </div>
   </div>
