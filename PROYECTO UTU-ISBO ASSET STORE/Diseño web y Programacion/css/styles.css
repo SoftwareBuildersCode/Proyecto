@@ -1,0 +1,12 @@
+main > .container{
+    padding: 30px 0;
+
+}
+.form-login {
+    max-width: 400px;
+}
+
+.custom-color:hover {
+    color: #198754; 
+}
+
